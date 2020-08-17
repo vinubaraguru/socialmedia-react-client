@@ -4,7 +4,7 @@ import React from 'react';
 import App from './App'
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:4000',
+  uri: 'https://lit-gorge-47405.herokuapp.com/' || 'http://localhost:4000',
 });
 
 const authLink = setContext((_, { headers }) => {
