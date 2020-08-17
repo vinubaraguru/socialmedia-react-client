@@ -8,11 +8,7 @@ import { DeleteButton } from './DeleteButton'
 
 export const PostCard = (props) => {
     const { user } = useContext(AuthContext);
-    const { id, body, createdAt, username, comments, likes, likeCount, commentCount } = props.post
-
-    const deletePost = ()=>{
-        console.log('deletePost')
-    }
+    const { id, body, createdAt, username, likes, likeCount, commentCount } = props.post
 
     return (
         <Card fluid>
